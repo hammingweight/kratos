@@ -1,8 +1,8 @@
-rm -f CDLA-Permissive-2.0.pdf
-rm -f kagglecatsanddogs_5340.zip
-rm -rf PetImages
-rm -f 'readme[1].txt'
-
-wget https://download.microsoft.com/download/3/e/1/3e1c3f21-ecdb-4869-8368-6deba77b919f/kagglecatsanddogs_5340.zip
-unzip kagglecatsanddogs_5340.zip
+rm -f dogs-vs-cats.zip
+rm -f train.zip
+rm -f test1.zip
+rm -rf cats_vs_dogs
+rm -f sampleSubmission.csv
+kaggle c download -c dogs-vs-cats
+unzip dogs-vs-cats.zip
 python split_data.py

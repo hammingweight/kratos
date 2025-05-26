@@ -12,5 +12,6 @@ def make_subset(subset_name, start_index, end_index):
             shutil.copyfile(src=original_dir / fname,
                             dst=dir / fname)
 
-make_subset("train", start_index=0, end_index=11250)
-make_subset("validation", start_index=11250, end_index=12500)
+make_subset("train", start_index=0, end_index=10000)
+make_subset("validation", start_index=10000, end_index=11250)
+make_subset("test", start_index=11250, end_index=12500)

@@ -6,3 +6,5 @@ rm -f sampleSubmission.csv
 kaggle c download -c dogs-vs-cats
 unzip dogs-vs-cats.zip
 python split_data.py
+rm -rf logs
+mkdir logs

@@ -38,7 +38,10 @@ callbacks = [
     keras.callbacks.ModelCheckpoint(
         filepath="convnet_from_scratch.keras",
         save_best_only=True,
-        monitor="val_loss")
+        monitor="val_loss"),
+    keras.callbacks.TensorBoard(
+        log_dir = "logs",
+        histogram_freq = 1)
 ]
 history = model.fit(
     train_dataset,

@@ -7,3 +7,4 @@ test1
 cats_vs_dogs
 convnet_from_scratch.keras
 logs
+__pycache__

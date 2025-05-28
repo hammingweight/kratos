@@ -5,13 +5,13 @@ try:
 except ModuleNotFoundError:
     import keras
     from keras.utils import image_dataset_from_directory
-from gangplank import EvaluationExporter
+from gangplank import TrainTestExporter
 
 base_dir = pathlib.Path("cats_vs_dogs")
 
 model = keras.models.load_model("convnet_from_scratch.keras")
 
-callbacks = [EvaluationExporter(job="vision")]
+callbacks = [TrainTestExporter(job="vision")]
 test_dataset = image_dataset_from_directory(
     base_dir / "test",
     image_size=(180, 180),

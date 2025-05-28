@@ -1,5 +1,9 @@
-from tensorflow import keras
-from tensorflow.keras import layers
+try:
+    from tensorflow import keras
+    from tensorflow.keras import layers
+except ModuleNotFoundError:
+    import keras
+    from keras import layers
 
 inputs = keras.Input(shape=(180, 180, 3))
 x = layers.Rescaling(1./255)(inputs)

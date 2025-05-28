@@ -5,7 +5,7 @@ try:
 except ModuleNotFoundError:
     import keras
     from keras.utils import image_dataset_from_directory
-from example_package_hammingweight import EvaluationExporter
+from gangplank import EvaluationExporter
 
 base_dir = pathlib.Path("cats_vs_dogs")
 

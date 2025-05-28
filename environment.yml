@@ -61,7 +61,6 @@ dependencies:
       - debugpy==1.8.14
       - decorator==5.2.1
       - defusedxml==0.7.1
-      - example-package-hammingweight==0.0.2
       - executing==2.2.0
       - fastjsonschema==2.21.1
       - filelock==3.18.0
@@ -70,6 +69,7 @@ dependencies:
       - fqdn==1.5.1
       - fsspec==2025.3.2
       - fuzzywuzzy==0.18.0
+      - gangplank==0.0.1
       - gast==0.6.0
       - google-pasta==0.2.0
       - grpcio==1.71.0
